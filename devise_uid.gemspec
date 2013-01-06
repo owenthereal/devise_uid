@@ -21,6 +21,4 @@ Gem::Specification.new do |gem|
   gem.add_dependency("railties", "~> 3.0")
 
   gem.add_development_dependency "rspec", "~> 2.12"
-  gem.add_development_dependency "activerecord", "~> 3.0"
-  gem.add_development_dependency "sqlite3", "~> 1.3.6"
 end
