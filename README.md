@@ -7,13 +7,14 @@ Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/jing
 [![Dependency
 Status](https://gemnasium.com/jingweno/devise_uid.png)](https://gemnasium.com/jingweno/devise_uid)
 
-Add UID stupport to Devise.
+Add UID support to Devise. A lot of times, we want a unique ID
+representing the user model instead of its incremental ID in the
+database, for example, in API instead of exposing the primary key, we use a random generated unique string to indentify this user.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'devise'
     gem 'devise_uid'
 
 And then execute:
@@ -57,7 +58,7 @@ An uid is generated when a Devise MODEL is created. Access it like this:
 
 ```ruby
 user = User.create(email: "foo@bar.com")
-puts user.uid
+puts user.uid # => "V8aS9tucNzKyH39d4Bpq"
 ```
 
 ## Contributing
