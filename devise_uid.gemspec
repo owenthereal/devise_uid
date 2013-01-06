@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = DeviseUid::VERSION
   gem.authors       = ["Jingwen Owen Ou"]
   gem.email         = ["jingweno@gmail.com"]
-  gem.description   = %q{Add UID support for devise}
-  gem.summary       = %q{Add UID support for devise}
+  gem.description   = %q{Add UID stupport to Devise}
+  gem.summary       = %q{Add UID stupport to Devise}
   gem.homepage      = "https://github.com/jingweno/devise_uid"
 
   gem.files         = `git ls-files`.split($/)

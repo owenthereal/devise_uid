@@ -1,24 +1,57 @@
-# DeviseUid
+# devise_uid
 
-TODO: Write a gem description
+Add UID stupport to Devise.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
+    gem 'devise'
     gem 'devise_uid'
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
+### Automatic Installation
 
-    $ gem install devise_uid
+Add devise_uid to any of your Devise models using the
+following generator:
+
+    rails generate devise_uid MODEL
+
+Replace MODEL with the class name you want to add devise_uid.
+This will add the :uid flag to your model's Devise modules.
+The generator will also create a migration file.
+Currently only ActiveRecord is supported.
+
+### Manual Installation
+
+Add `:uid` to the `devise` call in your model:
+
+```ruby
+class User < ActiveRecord
+  devise :database_authenticable, :confirmable, :uid
+end
+```
+
+Add `uid` field to your Devise model migration:
+
+```ruby
+class AddUidToUser< ActiveRecord::Migration
+  add_column :users, :uid, :string
+  add_index :users, :uid, :unique => true
+end
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+An uid is generated when a Devise MODEL is created. Access it like this:
+
+```ruby
+user = User.create(email: "foo@bar.com")
+puts user.uid
+```
 
 ## Contributing
 
