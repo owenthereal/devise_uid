@@ -1,5 +1,8 @@
 # devise_uid
 
+[![Dependency
+Status](https://gemnasium.com/jingweno/devise_uid.png)](https://gemnasium.com/jingweno/devise_uid)
+
 Add UID stupport to Devise.
 
 ## Installation
