@@ -2,6 +2,8 @@
 
 [![Build
 Status](https://travis-ci.org/jingweno/devise_uid.png?branch=master)](https://travis-ci.org/jingweno/devise_uid)
+[![Code
+Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/jingweno/devise_uid)
 [![Dependency
 Status](https://gemnasium.com/jingweno/devise_uid.png)](https://gemnasium.com/jingweno/devise_uid)
 
