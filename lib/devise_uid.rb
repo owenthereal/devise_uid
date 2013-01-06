@@ -1,5 +1,4 @@
 require "devise_uid/version"
+require "devise"
 
-module DeviseUid
-  # Your code goes here...
-end
+Devise.add_module :uid, :model => "devise_uid/model"
