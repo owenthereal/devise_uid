@@ -18,7 +18,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
 
   gem.add_dependency("devise", ">= 2.1.2")
-  gem.add_dependency("railties", "~> 3.0")
+  gem.add_dependency("railties", ">= 3.0")
 
   gem.add_development_dependency "rspec", "~> 2.12"
 end
