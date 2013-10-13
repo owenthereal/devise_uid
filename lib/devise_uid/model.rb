@@ -9,7 +9,10 @@ module Devise
 
       module ClassMethods
         def uid
-          generate_token(:uid)
+          loop do
+            token = Devise.friendly_token
+            break token unless to_adapter.find_first({ :uid => token })
+          end
         end
       end
 
