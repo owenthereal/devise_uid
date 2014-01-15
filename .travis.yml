@@ -1,12 +1,9 @@
 language: ruby
 rvm:
+  - 2.1.0
   - 2.0.0
   - 1.9.3
   - jruby-19mode
-  - rbx
-matrix:
-    allow_failures:
-      - rbx
 notifications:
   recipients:
     - jingweno@gmail.com
